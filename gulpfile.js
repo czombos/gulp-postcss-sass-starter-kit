@@ -8,6 +8,7 @@ var uglify       = require('gulp-uglify');
 var rename       = require("gulp-rename");
 var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
+var cache        = require('gulp-cache');
 
 gulp.task('sass', function() {
 	gulp.src('sass/**/*.sass')
@@ -39,11 +40,11 @@ gulp.task('scripts', function() {
 
 gulp.task('images', function () {
 	return gulp.src('images/original/*.{jpg,jpeg,png,gif}')
-	.pipe(imagemin({
+	.pipe(cache(imagemin({
 		progressive: true,
 		svgoPlugins: [{removeViewBox: false}],
 		use: [pngquant()]
-	}))
+	})))
 	.pipe(gulp.dest('images/'));
 });
 
