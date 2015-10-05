@@ -39,7 +39,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('images', function () {
-	return gulp.src('images/original/*.{jpg,jpeg,png,gif}')
+	return gulp.src('images/original/**/*')
 	.pipe(cache(imagemin({
 		progressive: true,
 		svgoPlugins: [{removeViewBox: false}],
