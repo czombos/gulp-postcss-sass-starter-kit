@@ -48,7 +48,11 @@ gulp.task('images', function () {
 	.pipe(gulp.dest('images/'));
 });
 
-gulp.task('default', ['sass', 'browser-sync', 'scripts', 'images'], function () {
+gulp.task('clear', function (done) {
+	return cache.clearAll(done);
+});
+
+gulp.task('default', ['clear', 'sass', 'browser-sync', 'scripts', 'images'], function () {
 	gulp.watch('sass/**/*.sass', ['sass']);
 	gulp.watch('js/**/*.js', ['scripts']);
 	gulp.watch('images/*', ['images']);
