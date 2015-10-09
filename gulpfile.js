@@ -1,6 +1,7 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
+var plumber      = require('gulp-plumber');
 var browserSync  = require('browser-sync');
 var prefix       = require('gulp-autoprefixer');
 var uglify       = require('gulp-uglify');
@@ -23,6 +24,7 @@ output = {
 
 gulp.task('sass', function () {
 	gulp.src(input.sass)
+		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass({
 			includePaths: ['scss'],
