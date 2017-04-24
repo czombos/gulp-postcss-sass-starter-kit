@@ -1,0 +1,14 @@
+{
+  "name": "gulppostcssstarter",
+  "description": "Basic starter project for PostCSS use via Gulp",
+  "main": "gulpfile.js",
+  "authors": [
+    "Tamas Czombos"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

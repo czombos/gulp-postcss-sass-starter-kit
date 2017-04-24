@@ -1,38 +1,27 @@
 {
-  "name": "gulp-starter-kit",
+  "name": "gulp-postcss-sass-starter-kit",
   "version": "1.0.0",
-  "description": "starter kit for gulp",
-  "main": "index.html",
+  "description": "A collection of packages that build a website using Gulp build system with PostCSS Sass UglifyJS Browsersync",
+  "author": "Tamas Czombos",
+  "license": "MIT",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tamas Czombos",
-  "homepage": "https://plus.google.com/+TamásCzombos",
-  "license": "MIT",
-  "keywords": [
-    "gulp",
-    "scss",
-    "js",
-    "images"
-  ],
   "devDependencies": {
-    "browser-sync": "^2.9.6",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-cache": "^0.3.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-plumber": "^1.0.1",
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-include": "^2.3.1",
+    "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.4.1",
-    "imagemin-pngquant": "^4.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/czombos/gulp-starter-kit.git"
-  },
-  "bugs": {
-    "url": "https://github.com/czombos/gulp-starter-kit/issues"
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "pixrem": "^3.0.2",
+    "postcss-import": "^9.1.0"
   }
 }
