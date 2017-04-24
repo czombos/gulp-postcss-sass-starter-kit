@@ -40,7 +40,7 @@ gulp.task('js', function(){
     		.pipe(reload({stream:true}));
 });
 
-gulp.task('serve, function(){
+gulp.task('serve', function(){
 	browserSync({
 		server: {
 			baseDir: "./"
