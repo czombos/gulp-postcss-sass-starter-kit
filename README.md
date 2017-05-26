@@ -1,4 +1,4 @@
-Gulp build system with PostCSS Sass UglifyJS Browsersync
+Gulp build system with PostCSS, Sass, UglifyJS, Browsersync
 ========================================================
 
 > A collection of packages that build a website
