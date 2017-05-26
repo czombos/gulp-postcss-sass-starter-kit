@@ -1,7 +1,7 @@
 Gulp build system with PostCSS, Sass, UglifyJS, Browsersync
 ========================================================
 
-> A collection of packages that build a website
+> Automating front-end build processes with CSS/SASS/JS import and merge
 
 ## Install
 ### Requirements
